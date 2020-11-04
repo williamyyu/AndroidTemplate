@@ -4,7 +4,11 @@
  */
 
 object Kotlin {
-    const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
+    const val stdLib = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
+    const val coroutinesCore =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+    const val coroutinesAndroid =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
 }
 
 object Material {
@@ -18,14 +22,38 @@ object AndroidX {
     const val constraintLayout =
         "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
 
+    // Navigation
     const val navigationFragment =
         "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     const val navigationUI = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+
+    // Room
+    const val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
+    const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
+}
+
+object Hilt {
+    const val hiltCompiler = "androidx.hilt:hilt-compiler:${Versions.hilt}"
+    const val hiltViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hilt}"
+    const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hiltAndroid}"
+    const val hiltAndroidCompiler =
+        "com.google.dagger:hilt-android-compiler:${Versions.hiltAndroid}"
+}
+
+object ThirdPartyLib {
+    // Logging
+    const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
+
+    // key-value storage framework
+    const val mmkv = "com.tencent:mmkv-static:${Versions.mmkv}"
 }
 
 object GradlePlugin {
     const val gradle = "com.android.tools.build:gradle:${Versions.gradle}"
-    const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
+    const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
+    const val hiltAndroid = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hiltAndroid}"
+    const val saveArgs =
+        "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation}"
 }
 
 object UnitTest {

@@ -9,8 +9,9 @@ buildscript {
     }
     dependencies {
         classpath GradlePlugin.gradle
-        classpath GradlePlugin.kotlinGradlePlugin
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath GradlePlugin.kotlin
+        classpath GradlePlugin.saveArgs
+        classpath GradlePlugin.hiltAndroid
     }
 }
 

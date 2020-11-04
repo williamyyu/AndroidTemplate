@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -33,14 +35,26 @@ android {
 }
 
 dependencies {
-    implementation Kotlin.kotlinStdLib
+    implementation Kotlin.stdLib
+
     implementation Material.material
+
     implementation AndroidX.coreKtx
     implementation AndroidX.appcompat
     implementation AndroidX.lifecycleExt
     implementation AndroidX.constraintLayout
     implementation AndroidX.navigationFragment
     implementation AndroidX.navigationUI
+    implementation AndroidX.roomRuntime
+    kapt AndroidX.roomCompiler
+
+    implementation Hilt.hiltAndroid
+    implementation Hilt.hiltViewModel
+    kapt Hilt.hiltCompiler
+    kapt Hilt.hiltAndroidCompiler
+
+    implementation ThirdPartyLib.timber
+    implementation ThirdPartyLib.mmkv
 
     testImplementation UnitTest.junit4
     androidTestImplementation AndroidTest.junit
