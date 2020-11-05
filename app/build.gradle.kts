@@ -10,13 +10,27 @@ android {
     buildToolsVersion(AndroidConfigs.buildToolsVersion)
 
     defaultConfig {
-        applicationId(AndroidConfigs.applicationId)
-        minSdkVersion(AndroidConfigs.minSdkVersion)
-        targetSdkVersion(AndroidConfigs.targetSdkVersion)
+        applicationId = AndroidConfigs.applicationId
         versionCode = AndroidConfigs.versionCode
         versionName = AndroidConfigs.versionName
 
+        minSdkVersion(AndroidConfigs.minSdkVersion)
+        targetSdkVersion(AndroidConfigs.targetSdkVersion)
+
         testInstrumentationRunner = "AndroidX.test.runner.AndroidJUnitRunner"
+
+        /**
+         * Uncomment the following line if your minSdk is lower than API 21,
+         * and use `app:srcCompat` instead of `android:src` for ImageView
+         *
+         * Vector Drawables is supported from API 21, for the devices that lower than API 21,
+         * Gradle will convert these vector drawables into png files which will then increase
+         * the app size.
+         *
+         * So, we can use the AndroidX supportLibrary for the devices that lower than API 21 to support
+         * Vector Drawables
+         */
+        // vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
