@@ -1,5 +1,14 @@
 # AndroidTemplate
 
+## Usage
+1. Change `applicationId` in [AndroidConfigs](buildSrc/src/main/java/AndroidConfigs)
+2. Change `app_name` in strings.xml
+3. Change `rootProject.name` in [settings.gradle.kts](settings.gradle.kts)
+4. Rename the package name `com.will.androidtemplate` to whatever you like
+5. run `./gradlew dependencyUpdates` to check library version up to date
+
+
+## Glince
 Look at this incredible clear dependencies!
 
 ```gradle
