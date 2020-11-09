@@ -10,7 +10,7 @@ object Versions {
 
     //region Kotlin
     const val kotlin = "1.4.10"
-    const val coroutines = "1.3.3"
+    const val coroutines = "1.4.1"
     //endregion
 
     //region AndroidX

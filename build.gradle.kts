@@ -5,15 +5,11 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath(GradlePlugin.gradle)
-        classpath(GradlePlugin.kotlin)
-        classpath(GradlePlugin.saveArgs)
-        classpath(GradlePlugin.hiltAndroid)
+        classpath(GradleLibs.gradle)
+        classpath(GradleLibs.kotlin)
+        classpath(GradleLibs.saveArgs)
+        classpath(GradleLibs.hiltAndroid)
     }
-}
-
-plugins {
-    id("com.github.ben-manes.versions") version "0.34.0"
 }
 
 allprojects {
