@@ -41,6 +41,25 @@ object Libs {
             "com.google.dagger:hilt-android-compiler:${Versions.hiltAndroid}"
     }
 
+    object Network {
+        object Retrofit {
+            const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+            const val moshiConverter =
+                "com.squareup.retrofit2:converter-moshi:${Versions.moshiConverter}"
+        }
+
+        object OkHttp {
+            const val okHttp = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
+            const val httpLoggingInterceptor =
+                "com.squareup.okhttp3:logging-interceptor:${Versions.httpLoggingInterceptor}"
+        }
+
+        object Moshi {
+            const val moshi = "com.squareup.moshi:moshi:${Versions.moshi}"
+            const val moshiKotlin = "com.squareup.moshi:moshi-kotlin:${Versions.moshiKotlin}"
+        }
+    }
+
     object ThirdPartyLib {
         // Logging
         const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
