@@ -54,6 +54,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":tmdbsdk"))
+
     implementation(Libs.Kotlin.stdLib)
     implementation(Libs.Kotlin.coroutinesCore)
     implementation(Libs.Kotlin.coroutinesAndroid)
