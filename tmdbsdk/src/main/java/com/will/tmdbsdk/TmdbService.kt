@@ -18,7 +18,7 @@ import retrofit2.http.GET
 /**
  * [API doc](https://developers.themoviedb.org/3/movies)
  */
-interface TmdbService { // TODO (Extract to a independent module?)
+interface TmdbService {
     @GET("movie/popular")
     suspend fun getPopularMovies(): PopularMovieResponse
 
