@@ -15,9 +15,18 @@ object Libs {
     object AndroidX {
         const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
         const val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
-        const val lifecycleExt = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycleExt}"
         const val constraintLayout =
             "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+
+        // ViewModel
+        const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.viewModel}"
+
+        // LiveData
+        const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.liveData}"
+
+        // Annotation processor
+        const val lifeCycleCompiler =
+            "androidx.lifecycle:lifecycle-compiler:${Versions.lifeCycleCompiler}"
 
         // Navigation
         const val navigationFragment =
@@ -25,7 +34,7 @@ object Libs {
         const val navigationUI = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
 
         // Room
-        const val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
+        const val roomRuntime = "androidx.room:room-ktx:${Versions.room}"
         const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
     }
 

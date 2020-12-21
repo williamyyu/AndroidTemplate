@@ -9,17 +9,19 @@ object Versions {
     const val material = "1.2.1"
 
     //region Kotlin
-    const val kotlin = "1.4.10"
-    const val coroutines = "1.4.1"
+    const val kotlin = "1.4.21"
+    const val coroutines = "1.4.2"
     //endregion
 
     //region AndroidX
     const val coreKtx = "1.3.2"
     const val appcompat = "1.2.0"
-    const val lifecycleExt = "2.2.0"
+    const val viewModel = "2.2.0"
+    const val liveData = "2.2.0"
+    const val lifeCycleCompiler = "2.2.0"
     const val constraintLayout = "2.0.4"
-    const val navigation = "2.3.1"
-    const val room = "2.2.5"
+    const val navigation = "2.3.2"
+    const val room = "2.2.6"
     //endregion
 
     //region Hilt
@@ -40,7 +42,7 @@ object Versions {
 
     //region Third-Party
     const val timber = "4.7.1"
-    const val mmkv = "1.2.4"
+    const val mmkv = "1.2.6"
     //endregion
 
     //region Test
